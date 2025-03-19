@@ -1,10 +1,10 @@
 Welcome to my portfolio! This repository serves as an index to showcase my publicly available projects, programming proficiency, and problem-solving skills. Below, you'll find a detailed overview of my expertise, interests, and accomplishments.
 
-[Honors](https://www.linkedin.com/in/paudel-uddhav/details/honors/)
-[Recommendations](https://www.linkedin.com/in/paudel-uddhav/details/recommendations/)
-[Certifications](https://www.linkedin.com/in/paudel-uddhav/details/certifications/)
-[Experience](https://www.linkedin.com/in/paudel-uddhav/details/experience/)
-[Education](https://www.linkedin.com/in/paudel-uddhav/details/education/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Honors</div>](https://www.linkedin.com/in/paudel-uddhav/details/honors/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Recommendations</div>](https://www.linkedin.com/in/paudel-uddhav/details/recommendations/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Certifications</div>](https://www.linkedin.com/in/paudel-uddhav/details/certifications/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Experience</div>](https://www.linkedin.com/in/paudel-uddhav/details/experience/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Education</div>](https://www.linkedin.com/in/paudel-uddhav/details/education/)
 ---
 
 ## 🌟 About Me
