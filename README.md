@@ -1,10 +1,10 @@
 Welcome to my portfolio! This repository serves as an index to showcase my publicly available projects, programming proficiency, and problem-solving skills. Below, you'll find a detailed overview of my expertise, interests, and accomplishments.
 
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Honors</div>](https://www.linkedin.com/in/paudel-uddhav/details/honors/)
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Recommendations</div>](https://www.linkedin.com/in/paudel-uddhav/details/recommendations/)
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Certifications</div>](https://www.linkedin.com/in/paudel-uddhav/details/certifications/)
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Experience</div>](https://www.linkedin.com/in/paudel-uddhav/details/experience/)
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none;">Education</div>](https://www.linkedin.com/in/paudel-uddhav/details/education/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Honors</div>](https://www.linkedin.com/in/paudel-uddhav/details/honors/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Recommendations</div>](https://www.linkedin.com/in/paudel-uddhav/details/recommendations/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Certifications</div>](https://www.linkedin.com/in/paudel-uddhav/details/certifications/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Experience</div>](https://www.linkedin.com/in/paudel-uddhav/details/experience/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Education</div>](https://www.linkedin.com/in/paudel-uddhav/details/education/)
 ---
 
 ## 🌟 About Me
@@ -54,18 +54,11 @@ I am deeply interested in **AI** / **ML** & **Automation** and have worked on pr
 ## ✍️ Articles Published
 
 I have shared my knowledge and insights through articles published on LinkedIn. Here are some of my featured articles:
--[How to Use 'git remote add' to Push a New Branch to an existing Repository](https://www.linkedin.com/pulse/how-use-git-remote-add-push-new-branch-existing-uddhav-paudel-jom4e)
+
+- [How to Use 'git remote add' to Push a New Branch to an existing Repository](https://www.linkedin.com/pulse/how-use-git-remote-add-push-new-branch-existing-uddhav-paudel-jom4e)
 - [Setting Up PostgreSQL and pgAdmin Using Docker](https://www.linkedin.com/pulse/setting-up-postgresql-pgadmin-using-docker-uddhav-paudel-yrgle/) 
 - [Building a Scalable and Automated Deployment Pipeline with Cloudflare, Docker, and Jenkins](https://www.linkedin.com/pulse/building-scalable-automated-deployment-pipeline-docker-uddhav-paudel-6zhpe/) 
 - [MEVN Full-Stack Development with CI/CD: Automating Deployments Using GitLab & Jenkins](https://www.linkedin.com/pulse/mevn-full-stack-development-cicd-automating-using-gitlab-paudel-vsnae) 
-
-*(Update this section with actual article titles and links.)*
-
----
-
-## 📂 Public Projects
-
-This portfolio showcases all my publicly available projects. Each project is a testament to my programming proficiency and problem-solving abilities. Explore the projects listed in the left panel to learn more about them.
 
 ---
 
