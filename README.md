@@ -51,18 +51,13 @@ I am deeply interested in **AI** / **ML** & **Automation** and have worked on pr
 
 ---
 
-## 🏆 Honors and Certifications
-
-
-
----
-
 ## ✍️ Articles Published
 
 I have shared my knowledge and insights through articles published on LinkedIn. Here are some of my featured articles:
-- [Article Title 1](https://www.linkedin.com/in/paudel-uddhav) *(Replace with actual article link)*
-- [Article Title 2](https://www.linkedin.com/in/paudel-uddhav) *(Replace with actual article link)*
-- [Article Title 3](https://www.linkedin.com/in/paudel-uddhav) *(Replace with actual article link)*
+-[How to Use 'git remote add' to Push a New Branch to an existing Repository](https://www.linkedin.com/pulse/how-use-git-remote-add-push-new-branch-existing-uddhav-paudel-jom4e)
+- [Setting Up PostgreSQL and pgAdmin Using Docker](https://www.linkedin.com/pulse/setting-up-postgresql-pgadmin-using-docker-uddhav-paudel-yrgle/) 
+- [Building a Scalable and Automated Deployment Pipeline with Cloudflare, Docker, and Jenkins](https://www.linkedin.com/pulse/building-scalable-automated-deployment-pipeline-docker-uddhav-paudel-6zhpe/) 
+- [MEVN Full-Stack Development with CI/CD: Automating Deployments Using GitLab & Jenkins](https://www.linkedin.com/pulse/mevn-full-stack-development-cicd-automating-using-gitlab-paudel-vsnae) 
 
 *(Update this section with actual article titles and links.)*
 
