@@ -1,10 +1,10 @@
 Welcome to my portfolio! This repository serves as an index to showcase my publicly available projects, programming proficiency, and problem-solving skills. Below, you'll find a detailed overview of my expertise, interests, and accomplishments.
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 5px;">Education</div>](https://www.linkedin.com/in/paudel-uddhav/details/education/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 5px;">Experience</div>](https://www.linkedin.com/in/paudel-uddhav/details/experience/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 5px;">Honors</div>](https://www.linkedin.com/in/paudel-uddhav/details/honors/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 5px;">Recommendations</div>](https://www.linkedin.com/in/paudel-uddhav/details/recommendations/)
+[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 5px;">Certifications</div>](https://www.linkedin.com/in/paudel-uddhav/details/certifications/)
 
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Honors</div>](https://www.linkedin.com/in/paudel-uddhav/details/honors/)
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Recommendations</div>](https://www.linkedin.com/in/paudel-uddhav/details/recommendations/)
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Certifications</div>](https://www.linkedin.com/in/paudel-uddhav/details/certifications/)
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Experience</div>](https://www.linkedin.com/in/paudel-uddhav/details/experience/)
-[<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: none; margin-bottom: 10px;">Education</div>](https://www.linkedin.com/in/paudel-uddhav/details/education/)
 ---
 
 ## 🌟 About Me
