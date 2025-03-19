@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
-import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import GitHub and LinkedIn icons
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "github-markdown-css/github-markdown.css";
 
 const Home = () => {
@@ -11,21 +11,19 @@ const Home = () => {
   const [readmeContent, setReadmeContent] = useState("");
 
   useEffect(() => {
-    // Fetch public repositories from GitHub
     fetch("https://api.github.com/users/uddhav-paudel/repos")
       .then((response) => response.json())
       .then((data) => {
         setRepos(data);
-        if (data.length > 0) {
-          setSelectedRepo(data[0]); // Select the first project by default
-        }
+        const defaultRepo =
+          data.find((repo) => repo.name === "portfolio-uddhav") || data[0];
+        setSelectedRepo(defaultRepo);
       })
       .catch((error) => console.error("Error fetching repos:", error));
   }, []);
 
   useEffect(() => {
     if (selectedRepo) {
-      // Fetch the README file for the selected repository
       fetch(
         `https://raw.githubusercontent.com/${selectedRepo.owner.login}/${selectedRepo.name}/main/README.md`
       )
@@ -41,7 +39,6 @@ const Home = () => {
   return (
     <div className="flex h-screen p-primary">
       <div className="w-1/3 me-primary bg-gray-100 p-primary pt-0 border border-gray-300 overflow-y-auto">
-        {/* Sticky Header for Left Panel */}
         <div className="sticky mb-primary top-0 bg-gray-100 z-10 p-primary border-b border-gray-300 flex justify-between items-center">
           <h2 className="text-xl font-bold">Projects</h2>
           <a
@@ -85,7 +82,6 @@ const Home = () => {
         <div className="p-primary pt-1">
           {selectedRepo ? (
             <>
-              {/* Sticky Header */}
               <div className="sticky top-0 bg-gray-50 z-1 p-primary border-b border-gray-300 flex justify-between items-center">
                 <div>
                   <h2 className="text-xl font-bold capitalize">
@@ -111,13 +107,11 @@ const Home = () => {
                   <FaGithub size={24} />
                 </a>
               </div>
-              {/* Content */}
               <div className="p-primary">
                 <p className="mb-primary">
                   {selectedRepo.description || "No description available."}
                 </p>
                 <hr className="my-4 border-gray-300" />
-
                 <div className="markdown-body">
                   <ReactMarkdown
                     children={readmeContent}
