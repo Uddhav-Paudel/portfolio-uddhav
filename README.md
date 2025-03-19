@@ -1,12 +1,15 @@
-# Uddhav Paudel - Portfolio
-
 Welcome to my portfolio! This repository serves as an index to showcase my publicly available projects, programming proficiency, and problem-solving skills. Below, you'll find a detailed overview of my expertise, interests, and accomplishments.
 
+[Honors](https://www.linkedin.com/in/paudel-uddhav/details/honors/)
+[Recommendations](https://www.linkedin.com/in/paudel-uddhav/details/recommendations/)
+[Certifications](https://www.linkedin.com/in/paudel-uddhav/details/certifications/)
+[Experience](https://www.linkedin.com/in/paudel-uddhav/details/experience/)
+[Education](https://www.linkedin.com/in/paudel-uddhav/details/education/)
 ---
 
 ## 🌟 About Me
 
-I am a passionate software developer with expertise in **polyglot programming** and a strong interest in **Artificial Intelligence (AI)** / **Machine Learning (ML)** and **Automation**. My work spans across **front-end**, **back-end**, and **DevOps** domains, demonstrating my ability to build and manage scalable, efficient, and robust systems.
+I am a passionate Software Engineer with expertise in **Problem Solving** and a strong interest in **Artificial Intelligence (AI)** / **Machine Learning (ML)** and **Automation**. My work spans across **front-end**, **back-end**, and **DevOps** domains, demonstrating my ability to build and manage scalable, efficient, and robust systems.
 
 ---
 
@@ -14,7 +17,11 @@ I am a passionate software developer with expertise in **polyglot programming** 
 
 ### Front-End Development
 - Proficient in **React.js**, **Angular**, and **Vue.js** for building dynamic and responsive user interfaces.
-- Expertise in **HTML5**, **CSS3**, **JavaScript (ES6+)**, and **TypeScript**.
+- Expertise in **HTML5**, **CSS3**, **JavaScript (ES6+)**
+
+### Mobile Application Development
+- Proficient in **PWA**, **Hybrid Technologies like Cordova**, **React-Native**, **Android Application Development**.
+- Expertise in optimizing mobile application performance and **SQLite queries**.
 
 ### Back-End Development
 - Skilled in **Node.js**, **Express.js**, **Django** for building RESTful APIs and server-side applications.
@@ -36,17 +43,17 @@ I am a passionate software developer with expertise in **polyglot programming** 
 
 ---
 
-## 🤖 AI and ML Interests
+## 🤖 AI / ML & Automation Interests
 
-I am deeply interested in **AI** and **ML** and have worked on projects that demonstrate my passion for these fields:
-- **A2V (Audio-to-Video)**: A project that converts audio input into synchronized video output.
-- **T2VClient (Text-to-Video)**: A client application that generates video content from textual input.
+I am deeply interested in **AI** / **ML** & **Automation** and have worked on projects that demonstrate my passion for these fields:
+- **A2V (Audio-to-Video)**: An API project that converts audio input into synchronized video output.
+- **T2VClient (Text-to-Video)**: A client application that provide interface to generate video content from textual input.
 
 ---
 
 ## 🏆 Honors and Certifications
 
-I have received several honors and certifications that validate my skills and expertise. *(Details to be updated manually.)*
+
 
 ---
 

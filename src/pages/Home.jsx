@@ -117,7 +117,7 @@ const Home = () => {
                   {selectedRepo.description || "No description available."}
                 </p>
                 <hr className="my-4 border-gray-300" />
-                <h3 className="text-lg font-bold mb-2">README</h3>
+
                 <div className="markdown-body">
                   <ReactMarkdown
                     children={readmeContent}
