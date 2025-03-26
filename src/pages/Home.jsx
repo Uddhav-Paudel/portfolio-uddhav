@@ -10,16 +10,56 @@ const Home = () => {
   const [selectedRepo, setSelectedRepo] = useState(null);
   const [readmeContent, setReadmeContent] = useState("");
 
-  useEffect(() => {
+  const fetchSortOrder = async () => {
+    let owner = "uddhav-paudel";
+    let repoName = "configurations";
+    let pathToSortOrderFile = "portfolio-project-order.json";
+
+    return fetch(
+      `https://raw.githubusercontent.com/${owner}/${repoName}/main/${pathToSortOrderFile}`
+    )
+      .then((response) => {
+        if (!response.ok) throw new Error("Failed to fetch sortOrder");
+        return response.json();
+      })
+      .then((data) => data)
+      .catch((error) => {
+        console.error("Error fetching sortOrder:", error);
+        return [];
+      });
+  };
+
+  const fetchRepos = async () => {
     fetch("https://api.github.com/users/uddhav-paudel/repos")
-      .then((response) => response.json())
-      .then((data) => {
-        setRepos(data);
-        const defaultRepo =
-          data.find((repo) => repo.name === "portfolio-uddhav") || data[0];
-        setSelectedRepo(defaultRepo);
+      .then((response) => {
+        if (!response.ok) throw new Error("Failed to fetch repos");
+        return response.json();
+      })
+      .then(async (data) => {
+        const dataSort = await fetchSortOrder();
+        if (dataSort.length > 0) {
+          const sortedRepos = data.sort((a, b) => {
+            const indexA = dataSort.indexOf(a.name);
+            const indexB = dataSort.indexOf(b.name);
+            return (
+              (indexA === -1 ? dataSort.length : indexA) -
+              (indexB === -1 ? dataSort.length : indexB)
+            );
+          });
+          setRepos(sortedRepos);
+          const defaultRepo =
+            sortedRepos.find((repo) => repo.name === "portfolio-uddhav") ||
+            sortedRepos[0];
+          setSelectedRepo(defaultRepo);
+        } else {
+          setRepos(data);
+        }
       })
       .catch((error) => console.error("Error fetching repos:", error));
+  };
+
+  useEffect(() => {
+    fetchRepos();
   }, []);
 
   useEffect(() => {
