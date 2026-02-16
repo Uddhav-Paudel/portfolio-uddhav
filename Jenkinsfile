@@ -34,7 +34,7 @@ spec:
 
     environment {
         REGISTRY     = "harbor.harbor.svc.cluster.local"
-        PROJECT      = "Lab"
+        PROJECT      = "lab"
         IMAGE_NAME   = "frontend-app"
         GITOPS_REPO  = "git@gitlab.com:your-gitops/platform-gitops-applications.git"
         GITOPS_PATH  = "applications/portfolio-frontend/deployment.yaml"
