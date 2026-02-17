@@ -13,7 +13,7 @@ spec:
   containers:
     - name: node
       image: node:20-alpine
-      command: ['cat']
+      command: ['cat'] 
       tty: true
 
     - name: kaniko
