@@ -92,7 +92,7 @@ spec:
                 container('kaniko') {
                     sh """
                     /kaniko/executor \
-                        --context `pwd` \
+                        --context \$pwd \
                         --dockerfile Dockerfile \
                         --destination ${FULL_IMAGE}
                     """
