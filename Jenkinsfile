@@ -36,7 +36,7 @@ spec:
         REGISTRY     = "harbor.harbor.svc.cluster.local"
         PROJECT      = "lab"
         IMAGE_NAME   = "frontend-app"
-        GITOPS_REPO  = "git@gitlab.com:your-gitops/platform-gitops-applications.git"
+        GITOPS_REPO  = "git@gitlab.com:udi-gitops/platform-gitops-applications.git"
         GITOPS_PATH  = "applications/portfolio-frontend/deployment.yaml"
     }
 
@@ -50,7 +50,7 @@ spec:
             steps {
                 deleteDir()
                 git(
-                    url: 'git@github.com:uddhav-paudel/portfolio-frontend.git',
+                    url: 'git@github.com:uddhav-paudel/portfolio-uddhav.git',
                     branch: 'main',
                     credentialsId: 'gitlab-ssh'
                 )
