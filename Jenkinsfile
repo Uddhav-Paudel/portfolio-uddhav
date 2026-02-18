@@ -92,9 +92,10 @@ spec:
                 container('kaniko') {
                     sh """
                     /kaniko/executor \
-                        --context \$pwd \
-                        --dockerfile Dockerfile \
-                        --destination ${FULL_IMAGE}
+                    --context ${WORKSPACE} \
+                    --dockerfile ${WORKSPACE}/Dockerfile \
+                    --destination ${FULL_IMAGE} \
+                    --verbosity info
                     """
                 }
             }
