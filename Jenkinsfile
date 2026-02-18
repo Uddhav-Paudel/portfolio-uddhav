@@ -17,8 +17,8 @@ spec:
       tty: true
 
     - name: kaniko
-      image: gcr.io/kaniko-project/executor:v1.23.2
-      command: ['cat']
+      image: gcr.io/kaniko-project/executor:v1.23.2-debug
+      command: ["/busybox/cat"]
       tty: true
       volumeMounts:
         - name: harbor-secret
@@ -67,7 +67,7 @@ spec:
 
                     env.FULL_IMAGE = "${REGISTRY}/${PROJECT}/${IMAGE_NAME}:${env.IMAGE_TAG}"
 
-                    echo "Building image: ${env.FULL_IMAGE}"
+                    echo "🚀 Building image: ${env.FULL_IMAGE}"
                 }
             }
         }
@@ -140,7 +140,7 @@ spec:
 
     post {
         success {
-            echo "✅ Image pushed: ${FULL_IMAGE}"
+            echo "✅ Image pushed successfully: ${FULL_IMAGE}"
             echo "✅ GitOps repo updated. ArgoCD will sync automatically."
         }
         failure {
