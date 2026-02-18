@@ -11,16 +11,15 @@ metadata:
 spec:
   serviceAccountName: jenkins
   containers:
-    - name: node
-      image: node:20-alpine
-      command: ['cat'] 
-      tty: true
-
     - name: kaniko
-      image: gcr.io/kaniko-project/executor:latest
-      volumeMounts:
-        - name: harbor-secret
-          mountPath: /kaniko/.docker
+    image: gcr.io/kaniko-project/executor:latest
+    command:
+      - cat
+    tty: true
+    volumeMounts:
+      - name: harbor-secret
+      mountPath: /kaniko/.docker
+
 
   volumes:
     - name: harbor-secret
