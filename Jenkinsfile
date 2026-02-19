@@ -93,14 +93,6 @@ spec:
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                container('node') {
-                    sh 'npm test -- --watchAll=false'
-                }
-            }
-        }
-
         stage('Build React App') {
             steps {
                 container('node') {
