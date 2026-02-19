@@ -1,4 +1,4 @@
-Welcome to my portfolio! This repository serves as an index to showcase my publicly available projects, programming proficiency, and problem-solving skills. Below, you'll find a detailed overview of my expertise, interests, and accomplishments.
+This repository serves as an index to showcase some of my public projects, programming proficiency, and problem-solving skills. Below, you'll find a detailed overview of my expertise, interests, and accomplishments.
 [<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: underline; margin-bottom: 5px; background-color: transparent;" onmouseover="this.style.backgroundColor='#0077b5'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0077b5';">Education</div>](https://www.linkedin.com/in/paudel-uddhav/details/education/)
 [<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: underline; margin-bottom: 5px; background-color: transparent;" onmouseover="this.style.backgroundColor='#0077b5'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0077b5';">Experience</div>](https://www.linkedin.com/in/paudel-uddhav/details/experience/)
 [<div style="border: 1px solid #0077b5; padding: 10px; border-radius: 5px; display: inline-block; color: #0077b5; text-decoration: underline; margin-bottom: 5px; background-color: transparent;" onmouseover="this.style.backgroundColor='#0077b5'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0077b5';">Honors</div>](https://www.linkedin.com/in/paudel-uddhav/details/honors/)
@@ -25,30 +25,29 @@ I am a passionate Software Engineer with expertise in **Problem Solving** and a 
 
 ### Back-End Development
 - Skilled in **Node.js**, **Express.js**, **Django** for building RESTful APIs and server-side applications.
+- Skilled in building clean, hexagonal architecture & contract first api design (Spring Boot & OpenAPI spec).
 
 ### Databases
 - Experienced in working with relational databases:
   - **SQLite**
   - **MySQL**
-  - **PostgreSQL**
+  - **PostgreSQL** (Preferred)
   - **Microsoft SQL Server**
 
 ### DevOps and Infrastructure
-- Hands-on experience with **Azure DevOps** tools:
-  - **CI/CD Pipelines** for automated build and deployment.
-  - **Azure App Services** for hosting and managing applications.
-  - **Azure AI** for integrating intelligent solutions.
-- Proficient in **Jenkins**, **Bash scripting**, and **YAML scripting** for automation and environment provisioning.
-- Expertise in managing **shared hosting** and **VPS hosting**, including infrastructure setup and environment provisioning.
-
+  - Hands-on experience with **Azure DevOps** tools, 
+  - K8S, Bash Scripting,
+  - [Jenkins CI](https://jenkins.uddhavpaudel.com.np), 
+  - [Harbor Registry](https://harbor.uddhavpaudel.com.np), 
+  - [ArgoCD CD](https://argocd.uddhavpaudel.com.np),  
+  - Skilled in managing **shared hosting** and **VPS hosting**, including infrastructure setup and environment provisioning.
 ---
 
 ## 🤖 AI / ML & Automation Interests
 
 I am deeply interested in **AI** / **ML** & **Automation** and have worked on projects that demonstrate my passion for these fields:
 - **A2V (Audio-to-Video)**: An API project that converts audio input into synchronized video output.
-- **T2VClient (Text-to-Video)**: A client application that provide interface to generate video content from textual input.
-
+- **T2VClient (Text-to-Video)**: Demonstrates an interface to generate video content from textual input.
 ---
 
 ## ✍️ Articles Published
