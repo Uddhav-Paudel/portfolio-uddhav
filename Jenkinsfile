@@ -43,7 +43,7 @@ spec:
     }
 
     environment {
-        REGISTRY     = "harbor.harbor.svc.cluster.local"
+        REGISTRY     = "harbor.uddhavpaudel.com.np"
         PROJECT      = "lab"
         IMAGE_NAME   = "frontendapp"
         GITOPS_REPO  = "git@gitlab.com:udi-gitops/platform-gitops-applications.git"
