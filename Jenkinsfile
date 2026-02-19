@@ -35,6 +35,7 @@ spec:
     - name: docker-config
       secret:
         secretName: harbor-secret
+        items:
           - key: .dockerconfigjson
             path: config.json
 """
