@@ -25,7 +25,7 @@ I am a passionate Software Engineer with expertise in **Problem Solving** and a 
 
 ### Back-End Development
 - Skilled in **Node.js**, **Express.js**, **Django** for building RESTful APIs and server-side applications.
-- Skilled in building **clean**, **hexagonal architecture** & **contract first api design** (Spring Boot & OpenAPI spec).
+- Enjoy building **clean**, **hexagonal architecture** & **contract first api design** (Preferred: Spring Boot & OpenAPI spec).
 
 ### Databases
 - Experienced in working with relational databases:
