@@ -14,13 +14,7 @@ spec:
   containers:
     - name: node
       image: node:20-alpine
-      command:
-        - sh
-        - -c
-        - |
-          apk add --no-cache git bash openssh
-          git config --global --add safe.directory '*'
-          cat
+      command: ['sh', '-c', 'apk add --no-cache git bash openssh && cat']
       tty: true
 
     - name: kaniko
@@ -57,7 +51,6 @@ spec:
             steps {
                 deleteDir()
                 container('node') {
-                    sh "git config --global --add safe.directory ${WORKSPACE}"
                     git(
                         url: 'git@github.com:uddhav-paudel/portfolio-uddhav.git',
                         branch: 'main',
@@ -76,8 +69,7 @@ spec:
                             returnStdout: true
                         ).trim()
 
-                        env.FULL_IMAGE =
-                          "${REGISTRY}/${PROJECT}/${IMAGE_NAME}:${env.IMAGE_TAG}"
+                        env.FULL_IMAGE = "${REGISTRY}/${PROJECT}/${IMAGE_NAME}:${env.IMAGE_TAG}"
 
                         echo "🚀 Building image: ${env.FULL_IMAGE}"
                     }
@@ -133,8 +125,6 @@ spec:
                         )
                     ]) {
                         sh """
-                        git config --global --add safe.directory '*'
-
                         mkdir -p ~/.ssh
                         cp \$SSH_KEY ~/.ssh/id_rsa
                         chmod 600 ~/.ssh/id_rsa
@@ -149,7 +139,7 @@ spec:
                         git add ${GITOPS_PATH}
                         git -c user.name="gitops-bot" \
                             -c user.email="gitops-bot@company.com" \
-                            commit -m "Update image to ${IMAGE_TAG}" || echo "No changes"
+                            commit -m "Update image to ${IMAGE_TAG}"
 
                         git push origin main
                         """
