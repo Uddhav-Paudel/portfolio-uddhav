@@ -134,7 +134,7 @@ const Home = () => {
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:text-blue-700 text-sm"
                     >
-                      Visit Live URL
+                      Live URL
                     </a>
                   )}
                 </div>
