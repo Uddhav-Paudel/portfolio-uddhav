@@ -69,7 +69,7 @@ const Home = () => {
       )
         .then((response) => {
           if (response.ok) return response.text();
-          else throw new Error("README not found");
+          else throw new Error("README file not found");
         })
         .then((data) => setReadmeContent(data))
         .catch(() => setReadmeContent("README file not available."));
