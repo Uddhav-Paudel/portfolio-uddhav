@@ -42,7 +42,7 @@ spec:
     environment {
         REGISTRY     = "harbor.harbor.svc.cluster.local"
         PROJECT      = "lab"
-        IMAGE_NAME   = "frontend-app"
+        IMAGE_NAME   = "frontendapp"
         GITOPS_REPO  = "git@gitlab.com:udi-gitops/platform-gitops-applications.git"
         GITOPS_PATH  = "applications/portfolio-frontend/deployment.yaml"
     }
@@ -105,6 +105,23 @@ spec:
             steps {
                 container('kaniko') {
                     sh """
+                    echo "🔍 Debug: Kaniko push credentials and namespace"
+
+                    # Namespace
+                    echo "Namespace: \$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace)"
+
+                    # Username from docker config
+                    USERNAME=\$(grep -Po '"${REGISTRY}"\\s*:\\s*{[^}]*"username"\\s*:\\s*"\\K[^"]+' /kaniko/.docker/config.json)
+
+                    # Password (base64 decode auth)
+                    AUTH_BASE64=\$(grep -Po '"${REGISTRY}"\\s*:\\s*{[^}]*"auth"\\s*:\\s*"\\K[^"]+' /kaniko/.docker/config.json)
+                    PASSWORD=\$(echo \$AUTH_BASE64 | base64 --decode | cut -d':' -f2)
+
+                    echo "Kaniko will push as:"
+                    echo "  USERNAME: \$USERNAME"
+                    echo "  PASSWORD: \$PASSWORD"
+
+                    # Now run Kaniko push
                     /kaniko/executor \
                       --context ${WORKSPACE} \
                       --dockerfile ${WORKSPACE}/Dockerfile \
