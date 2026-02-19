@@ -105,18 +105,17 @@ spec:
             steps {
                 container('kaniko') {
                     sh """
+                    echo "==== DEBUG DOCKER CONFIG ===="
+                    ls -la /kaniko/.docker/ || true
+                    cat /kaniko/.docker/config.json || true
+                    echo "============================="
                     
                     # Kaniko push
                     /kaniko/executor \
                     --context ${WORKSPACE} \
                     --dockerfile ${WORKSPACE}/Dockerfile \
                     --destination ${FULL_IMAGE} \
-                    --verbosity info
-
-                    echo "==== DEBUG DOCKER CONFIG ===="
-                    ls -la /kaniko/.docker/ || true
-                    cat /kaniko/.docker/config.json || true
-                    echo "============================="
+                    --verbosity info                    
                     """
                 }
             }
