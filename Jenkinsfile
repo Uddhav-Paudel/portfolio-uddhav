@@ -110,23 +110,22 @@ spec:
                     # Namespace
                     echo "Namespace: \$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace)"
 
-                    # Username from docker config
-                    USERNAME=\$(grep -Po '"${REGISTRY}"\\s*:\\s*{[^}]*"username"\\s*:\\s*"\\K[^"]+' /kaniko/.docker/config.json)
-
-                    # Password (base64 decode auth)
-                    AUTH_BASE64=\$(grep -Po '"${REGISTRY}"\\s*:\\s*{[^}]*"auth"\\s*:\\s*"\\K[^"]+' /kaniko/.docker/config.json)
-                    PASSWORD=\$(echo \$AUTH_BASE64 | base64 --decode | cut -d':' -f2)
+                    # Extract auth
+                    AUTH_BASE64=\$(grep '"auth"' /kaniko/.docker/config.json | head -1 | cut -d'"' -f4)
+                    CREDENTIALS=\$(echo \$AUTH_BASE64 | base64 --decode)
+                    USERNAME=\$(echo \$CREDENTIALS | cut -d':' -f1)
+                    PASSWORD=\$(echo \$CREDENTIALS | cut -d':' -f2)
 
                     echo "Kaniko will push as:"
                     echo "  USERNAME: \$USERNAME"
                     echo "  PASSWORD: \$PASSWORD"
 
-                    # Now run Kaniko push
+                    # Kaniko push
                     /kaniko/executor \
-                      --context ${WORKSPACE} \
-                      --dockerfile ${WORKSPACE}/Dockerfile \
-                      --destination ${FULL_IMAGE} \
-                      --verbosity info
+                    --context ${WORKSPACE} \
+                    --dockerfile ${WORKSPACE}/Dockerfile \
+                    --destination ${FULL_IMAGE} \
+                    --verbosity info
                     """
                 }
             }
