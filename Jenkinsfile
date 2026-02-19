@@ -28,13 +28,16 @@ spec:
       command: ["/busybox/cat"]
       tty: true
       volumeMounts:
-        - name: harbor-secret
+        - name: docker-config
           mountPath: /kaniko/.docker
 
   volumes:
-    - name: harbor-secret
+    - name: docker-config
       secret:
         secretName: harbor-secret
+        items:
+            - key: .dockerconfigjson
+            path: config.json
 """
         }
     }
@@ -109,7 +112,7 @@ spec:
                     ls -la /kaniko/.docker/ || true
                     cat /kaniko/.docker/config.json || true
                     echo "============================="
-                    
+
                     # Kaniko push
                     /kaniko/executor \
                     --context ${WORKSPACE} \
