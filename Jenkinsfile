@@ -1,6 +1,7 @@
 pipeline {
     agent {
         kubernetes {
+            namespace 'jenkins'
             defaultContainer 'node'
             yaml """
 apiVersion: v1
