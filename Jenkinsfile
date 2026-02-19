@@ -105,21 +105,7 @@ spec:
             steps {
                 container('kaniko') {
                     sh """
-                    echo "🔍 Debug: Kaniko push credentials and namespace"
-
-                    # Namespace
-                    echo "Namespace: \$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace)"
-
-                    # Extract auth
-                    AUTH_BASE64=\$(grep '"auth"' /kaniko/.docker/config.json | head -1 | cut -d'"' -f4)
-                    CREDENTIALS=\$(echo \$AUTH_BASE64 | base64 --decode)
-                    USERNAME=\$(echo \$CREDENTIALS | cut -d':' -f1)
-                    PASSWORD=\$(echo \$CREDENTIALS | cut -d':' -f2)
-
-                    echo "Kaniko will push as:"
-                    echo "  USERNAME: \$USERNAME"
-                    echo "  PASSWORD: \$PASSWORD"
-
+                    
                     # Kaniko push
                     /kaniko/executor \
                     --context ${WORKSPACE} \
