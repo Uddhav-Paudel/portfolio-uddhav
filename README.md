@@ -50,7 +50,7 @@ I am a passionate Software Engineer with expertise in **Problem Solving** and a 
 
 I am deeply interested in **AI** / **ML** & **Automation** and have worked on projects that demonstrate my passion for these fields:
 - **Procit B.V (Smartflow Platform)**: Customized SaaS platform features, optimized web & mobile performance, debugged complex issues, and led cross-functional development teams.
-- **Aone Solns UK (Multi-Vendor Ecommerce)**: Improved product discovery and checkout flows, structured seller and landing pages, leveraged Salesforce, WordPress, cloud platforms, and automated GitOps deployments with Bash scripts and Helm charts across AWS and Azure DevOps.
+- **Aone Solutions (Multi-Vendor Ecommerce)**: Improved product discovery and checkout flows, structured seller and landing pages, leveraged Salesforce, WordPress, cloud platforms, and automated GitOps deployments with Bash scripts and Helm charts across AWS and Azure DevOps.
 
 ---
 
